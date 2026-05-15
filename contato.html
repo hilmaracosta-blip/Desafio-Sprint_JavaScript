@@ -44,11 +44,13 @@
                 <input type="text" name="sobrenome" placeholder="SOBRENOME*" class="fordform" required>
                 <input type="text" name="telefone" placeholder="TELEFONE*" class="fordform" required>
                 <select name="contato" class="fordform" required>
-                    <option selected>COMO DESEJA SER CONTATADO</option>
-                    <option>TELEFONE</option>
-                    <option>E-MAIL</option>
-                </select>
-            <button type="submit">Enviar</button>
+                     <option value="" disabled selected>TIPO DE CONTATO*</option>
+                     <option value="elogio">Elogio</option>
+                     <option value="reclamacao">Reclamação</option>
+                     <option value="solicitacao">Solicitação</option>
+                     </select>
+                     <textarea name="mensagem" placeholder="MENSAGEM*" class="fordform" required></textarea>
+            <button type="submit" id="enviarBtn">Enviar</button>
             </form>
             </div>
         </div>
