@@ -6,22 +6,25 @@ class contato {
 }
 
 function Post(form) {
-
-  let data = new contato(form.elements.namedItem("nome").value,
-            form.elements.namedItem("sobrenome").value, 
-            form.elements.namedItem("email").value, 
-            form.elements.namedItem("cpf").value, 
-            form.elements.namedItem("telefone").value, 
-            form.elements.namedItem("contato").value);
-  
+    const formData = new FormData(form);
+    const dados = Object.fromEntries(formData.entries());
+    
+    console.log("Dados do Formulário:", dados);
+    alert("Mensagem enviada com sucesso, " + dados.nome + "!");
+    form.reset();
 }
 
-function Enviar() {
-
-    var nome = document.getElementById("nomeid");
-
-    if (nome.value != "") {
-        alert('Obrigado sr(a) ' + nome.value + ' os seus dados foram encaminhados com sucesso');
+window.onload = function() {
+    const btn = document.getElementById("enviarBtn");
+    if (btn) {
+        btn.onmouseover = () => {
+            btn.style.transform = "scale(1.1)";
+            btn.style.backgroundColor = "#003478";
+            btn.style.transition = "0.3s";
+        };
+        btn.onmouseout = () => {
+            btn.style.transform = "scale(1.0)";
+            btn.style.backgroundColor = "";
+        };
     }
-
-}
+};
