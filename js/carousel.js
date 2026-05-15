@@ -19,7 +19,7 @@ class Carousel {
         clearInterval(timer);
         timer = setInterval(() => {
             this.Next();
-        }, 2000);
+        }, 5000);
     }
 
     static Next() {
