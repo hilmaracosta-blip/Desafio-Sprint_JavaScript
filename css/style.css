@@ -145,3 +145,6 @@ button {
     border: 0px;
     border-radius: 10px;
 }
+
+.status-on { color: #22c55e; font-weight: bold; margin: 10px 0; }
+.status-off { color: #ef4444; font-weight: bold; margin: 10px 0; }
