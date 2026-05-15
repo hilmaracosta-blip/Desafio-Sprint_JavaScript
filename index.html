@@ -30,9 +30,14 @@
 
     </header>
     <main>
-        <div id="carousel">
+        <div id="carousel" style="position: relative; width: 100%; height: 860px; background-color: #f0f0f0;">
+            <button id="prevBtn" onclick="Carousel.Prev()" style="position: absolute; left: 20px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; padding: 20px; cursor: pointer; font-size: 25px; border-radius: 50%; z-index: 10;">&lt;</button>
+            
+            <button id="nextBtn" onclick="Carousel.Next()" style="position: absolute; right: 20px; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; padding: 20px; cursor: pointer; font-size: 25px; border-radius: 50%; z-index: 10;">&gt;</button>
         </div>
-        <div id="carousel-title">
+        
+        <div id="carousel-title" style="text-align: center; margin-top: 20px; font-size: 1.5em; font-weight: bold;"></div>
+        script src="js/carousel.js"></script>
         </div>
         <script>
              //insert each image on carousel
@@ -40,8 +45,11 @@
             carouselArr.push(new Carousel("imagem_2.jpg","Ford a nossa história","#"));
             carouselArr.push(new Carousel("imagem_3.jpg","Nova Ford Bronco Sport 2022","lancamento.html"));
             Carousel.Start(carouselArr);
+            // Inicia o carrossel
+            Carousel.Start(carouselArr);
         </script>
-    </main>
+    </main>  
+    
     <footer>
         <nav id="social">
             <ul>
