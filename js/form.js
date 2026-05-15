@@ -1,10 +1,3 @@
-
-//class contato
-
-class contato {
-    
-}
-
 function Post(form) {
     const formData = new FormData(form);
     const dados = Object.fromEntries(formData.entries());
@@ -14,6 +7,7 @@ function Post(form) {
     form.reset();
 }
 
+// Efeito visual no botão (Passo 9)
 window.onload = function() {
     const btn = document.getElementById("enviarBtn");
     if (btn) {

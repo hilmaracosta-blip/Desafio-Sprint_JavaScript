@@ -1,23 +1,14 @@
-
-
-//carousel
-
-//Array storage class
 let carouselArr = [];
 let currentIndex = 0;
 let timer; 
 
-
-
-//class Carousel
 class Carousel {
-constructor(image, title, url) {
+    constructor(image, title, url) {
         this.image = image;
         this.title = title;
         this.url = url;
     }
-    
-      
+
     static Start(arr) {
         carouselArr = arr;
         this.ShowItem(); // Mostra o primeiro item

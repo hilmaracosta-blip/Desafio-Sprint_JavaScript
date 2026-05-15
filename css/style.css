@@ -11,14 +11,17 @@ html {
 }
 
 div#carousel {
-    height: 40vh
+    height: 50vh;
     width: 100%;
      max-height: 628px;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
-      position: relative;
-}#arrow-left, #arrow-right {
+    position: relative;
+}
+
+
+#arrow-left, #arrow-right {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -48,10 +51,11 @@ div#carousel-title  {
     display: block;
     text-align: center;
     margin-top: 10px;
-    margin-bottom:10px
+    margin-bottom: 20px;
     font-weight: bold;
-     font-size: 1.2rem;
+    font-size: 1.2rem;
 }
+
 
 header ul {
     text-align: center;
